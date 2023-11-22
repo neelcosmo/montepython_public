@@ -571,7 +571,7 @@ def compute_posterior(information_instances):
                     # number of bins here.
                     info.chain[:, info.native_index+2], bins=info.bins,
                     #info.chain[:, info.native_index+2], bins=2*info.bins,
-                    weights=info.chain[:, 0], normed=False, density=False)
+                    weights=info.chain[:, 0], density=False)# normed=False, density=False) #changed by me, normed is deprecated in numpy
                 info.hist = info.hist/info.hist.max()
                 # Correct for temperature
                 info.hist = info.hist**conf.temperature
@@ -734,7 +734,7 @@ def compute_posterior(information_instances):
                         lkl_mean, _ = np.histogram(
                             info.chain[:, info.native_index+2],
                             bins=info.bin_edges,
-                            normed=False,
+                            density=False,#normed=False, #changed by me normed is deprecated in numpy
                             weights=np.exp(
                                 conf.min_minus_lkl-info.chain[:, 1])*info.chain[:, 0])
                         lkl_mean /= lkl_mean.max()
@@ -877,7 +877,7 @@ def compute_posterior(information_instances):
                             info.chain[:, info.native_second_index+2],
                             weights=info.chain[:, 0],
                             bins=(info.bins, info.bins),
-                            normed=False)
+                            density=False)#normed=False) #changed by me, normed is deprecated in numpy
                         # Correct for temperature:
                         info.n = info.n**conf.temperature
 

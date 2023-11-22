@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/home/user/anaconda3/envs/hcmp/bin/python
 """
 .. module:: MontePython
    :synopsis: Main module
