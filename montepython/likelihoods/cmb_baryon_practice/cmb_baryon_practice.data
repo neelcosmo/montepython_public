@@ -1,0 +1,4 @@
+# Values for Planck 2015
+# Updated to https://arxiv.org/abs/1502.01589, Table 1, col 6.
+cmb_baryon_practice.omega_b    = 0.02222
+cmb_baryon_practice.sigma  = 0.00023
