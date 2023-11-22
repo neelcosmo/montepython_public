@@ -1,0 +1,11 @@
+data.experiments=['bao_boss_dr12','bao_smallz_2014', 'cmb_baryon_practice']
+data.parameters['Omega_cdm'] = [0.3, 0, None, 0.05, 1, 'cosmo']
+data.parameters['Omega_k'] = [0.0, -0.5,0.5, 0.05, 1, 'cosmo']
+#data.parameters['omega_b'] = [0.02222, 0.02176, 0.02268, 0.00046, 1, 'cosmo']
+#'cmb_baryon_practice' is a gaussian prior for omega_b, rather than the above top-hat prior.
+#Note: Class complains if omega_b is either too small or too large.
+data.parameters['Omega_Lambda'] = [1,None,None,0, 1, 'derived']
+#data.cosmo_arguments['Omega_b'] = 0.048
+data.cosmo_arguments['h'] = 0.68
+data.N=10
+data.write_step=5

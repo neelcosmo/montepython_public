@@ -1,0 +1,4 @@
+data.experiments=['cmb_baryon_practice']
+data.parameters['omega_b'] = [2, 0, None, 0.02, 1e-2, 'cosmo']
+data.N=10
+data.write_step=5
