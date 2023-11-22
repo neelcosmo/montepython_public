@@ -1,0 +1,21 @@
+ param names	:  100~\omega{}_{b }\omega{}_{cdm }100*\theta{}_{s }ln10^{10}A_{s }n_{s }        \tau{}_{reio }A_{planck }   z_{reio }     H0            10^{+9}A_{s } 
+ R-1 values	:  1.183825	 0.957477	 0.755577	 0.449564	 0.836496	 0.678929	 2.472990	 0.626469	 1.308796	 1.311106	
+ Best Fit  	:  2.239077e+00	 1.175456e-01	 1.041263e+00	 3.022810e+00	 9.604296e-01	 4.899797e-02	 9.964562e-01	 7.109238e+00	 6.809798e+01	 2.054895e+00	
+ mean      	:  2.233131e+00	 1.194543e-01	 1.041161e+00	 3.018855e+00	 9.579353e-01	 4.463933e-02	 9.980031e-01	 6.672679e+00	 6.733019e+01	 2.046807e+00	
+ sigma     	:  nan	 nan	 nan	 nan	 nan	 nan	 4.706040e-05	 nan	 nan	 nan	
+
+ 1-sigma - 	:  nan	 nan	 nan	 nan	 nan	 nan	 3.040901e-04	 nan	 nan	 nan	
+ 1-sigma + 	:  nan	 nan	 nan	 nan	 nan	 nan	 3.982109e-04	 nan	 nan	 nan	
+ 2-sigma - 	:  nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	
+ 2-sigma + 	:  nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	
+ 3-sigma - 	:  nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	
+ 3-sigma + 	:  nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	
+
+ 1-sigma > 	:  nan	 nan	 nan	 nan	 nan	 nan	 9.983072e-01	 nan	 nan	 nan	
+ 1-sigma < 	:  nan	 nan	 nan	 nan	 nan	 nan	 9.984013e-01	 nan	 nan	 nan	
+ 2-sigma > 	:  nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	
+ 2-sigma < 	:  nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	
+ 3-sigma > 	:  nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	
+ 3-sigma < 	:  nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	
+ 95% > 	:  nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	
+ 95% < 	:  nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	

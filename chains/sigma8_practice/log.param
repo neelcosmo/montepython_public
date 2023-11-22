@@ -1,0 +1,83 @@
+#-----CLASS v3.2.1 (branch: master, hash: 997d1ac0b64d11439948a0cc13f719ef427f87be)-----
+
+data.experiments = ['sdss_lrgDR7', 'bao_boss_dr12', 'bao_smallz_2014', 'sn', 'hst']
+data.parameters['sigma8'] = [0.85, 0.5, 1, 0.1, 1, 'cosmo']
+#hi_class returns an error about the shooting failing for any sigma8 values, so currently this only runs with CLASS.
+data.parameters['n_s'] = [0.964, 0.8, 1, 0.01, 1, 'cosmo']
+data.parameters['h'] = [0.7, 0.5, 1, 0.1, 1, 'cosmo']
+data.parameters['omega_cdm'] = [0.12, 0.05, 0.2, 0.01, 1, 'cosmo']
+
+data.cosmo_arguments['omega_b'] = 0.02222
+
+
+#-----Likelihood-sdss_lrgDR7-----
+sdss_lrgDR7.data_directory = '/home/user/montepython/data'
+sdss_lrgDR7.num_mpk_points_full = 45
+sdss_lrgDR7.num_mpk_kbands_full = 250
+sdss_lrgDR7.min_mpk_points_use = 1
+sdss_lrgDR7.max_mpk_points_use = 45
+sdss_lrgDR7.min_mpk_kbands_use = 1
+sdss_lrgDR7.max_mpk_kbands_use = 250
+sdss_lrgDR7.use_scaling = True
+sdss_lrgDR7.redshift = 0.312782
+sdss_lrgDR7.zmax = 0.5
+sdss_lrgDR7.kmax = 0.2
+sdss_lrgDR7.d_angular_fid = 955.0314
+sdss_lrgDR7.d_radial_fid = 3728.3035
+sdss_lrgDR7.windows_file = 'sdss_lrgDR7/lrgdr7_windows.txt'
+sdss_lrgDR7.kbands_file = 'sdss_lrgDR7/lrgdr7_kbands.txt'
+sdss_lrgDR7.measurements_file = 'sdss_lrgDR7/lrgdr7_ccmeasurements.txt'
+sdss_lrgDR7.zerowindowfxn_file = 'sdss_lrgDR7/lrgdr7_zerowindowfxn.txt'
+sdss_lrgDR7.zerowindowfxnsubtractdat_file = 'sdss_lrgDR7/lrgdr7_zerowindowfxnsubtractdat.txt'
+sdss_lrgDR7.use_invcov = True
+sdss_lrgDR7.covmat_file = 'sdss_lrgDR7/lrgdr7_invcov.txt'
+sdss_lrgDR7.nptsa1 = 41
+sdss_lrgDR7.nptsa2 = 41
+sdss_lrgDR7.nptstot = 325
+sdss_lrgDR7.a1maxval = 1.1482
+sdss_lrgDR7.s1 = 0.04
+sdss_lrgDR7.s2 = 0.1
+sdss_lrgDR7.k1 = 0.1
+sdss_lrgDR7.k2 = 0.2
+sdss_lrgDR7.use_halofit = True
+sdss_lrgDR7.create_fid = True
+sdss_lrgDR7.use_sdssDR7 = True
+
+
+#-----Likelihood-bao_boss_dr12-----
+bao_boss_dr12.data_directory = '/home/user/montepython/data'
+bao_boss_dr12.data_file = 'COMBINEDDR12_BAO_consensus_dM_Hz/BAO_consensus_results_dM_Hz.txt'
+bao_boss_dr12.cov_file = 'COMBINEDDR12_BAO_consensus_dM_Hz/BAO_consensus_covtot_dM_Hz.txt'
+bao_boss_dr12.rs_rescale = 1.0
+bao_boss_dr12.rd_fid_in_Mpc = 147.78
+
+
+#-----Likelihood-bao_smallz_2014-----
+bao_smallz_2014.data_directory = '/home/user/montepython/data'
+bao_smallz_2014.file = 'bao_smallz_2014.txt'
+bao_smallz_2014.exclude = []
+
+
+#-----Likelihood-sn-----
+sn.data_directory = '/home/user/montepython/data'
+sn.z_mu_dmu = 'sn_z_mu_dmu_union2.txt'
+sn.covmat_sys = 'sn_covmat_sys_union2.txt'
+sn.covmat_nosys = 'sn_covmat_nosys_union2.txt'
+sn.has_marginalization = True
+sn.has_syscovmat = True
+
+
+#-----Likelihood-hst-----
+hst.h = 0.7324
+hst.sigma = 0.0174
+
+
+#-----------Cosmological-arguments---------
+data.cosmo_arguments.update({'omega_b': 0.02222, 'output': 'mPk', 'non linear': 'halofit', 'z_max_pk': 0.5, 'P_k_max_h/Mpc': 1.5})
+
+
+#--------Default-Configuration------
+data.path['root']	= '/home/user/montepython'
+data.path['MontePython']	= '/home/user/montepython/montepython'
+data.path['data']	= '/home/user/montepython/data'
+data.path['cosmo']	= '/home/user/class_3.2.1'

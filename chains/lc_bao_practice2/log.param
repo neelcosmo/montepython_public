@@ -1,0 +1,36 @@
+#-----CLASS v2.7.2 (branch: hi_class, hash: 16ae0f6ccfcee513146ec36b690678f34fb687f4)-----
+
+data.experiments=['bao_boss_dr12','bao_smallz_2014']
+data.parameters['Omega_cdm'] = [0.3, 0, None, 0.05, 1, 'cosmo']
+data.parameters['Omega_k'] = [0.0, -0.5,0.5, 0.05, 1, 'cosmo']
+data.parameters['omega_b'] = [0.02222, 0.02176, 0.02268, 0.00046, 1, 'cosmo']
+data.parameters['Omega_Lambda'] = [1,None,None,0, 1, 'derived']
+#data.cosmo_arguments['Omega_b'] = 0.048
+data.cosmo_arguments['h'] = 0.68
+data.N=10
+data.write_step=5
+
+
+#-----Likelihood-bao_boss_dr12-----
+bao_boss_dr12.data_directory = '/home/user/montepython/data'
+bao_boss_dr12.data_file = 'COMBINEDDR12_BAO_consensus_dM_Hz/BAO_consensus_results_dM_Hz.txt'
+bao_boss_dr12.cov_file = 'COMBINEDDR12_BAO_consensus_dM_Hz/BAO_consensus_covtot_dM_Hz.txt'
+bao_boss_dr12.rs_rescale = 1.0
+bao_boss_dr12.rd_fid_in_Mpc = 147.78
+
+
+#-----Likelihood-bao_smallz_2014-----
+bao_smallz_2014.data_directory = '/home/user/montepython/data'
+bao_smallz_2014.file = 'bao_smallz_2014.txt'
+bao_smallz_2014.exclude = []
+
+
+#-----------Cosmological-arguments---------
+data.cosmo_arguments.update({'h': 0.68})
+
+
+#--------Default-Configuration------
+data.path['root']	= '/home/user/montepython'
+data.path['MontePython']	= '/home/user/montepython/montepython'
+data.path['data']	= '/home/user/montepython/data'
+data.path['cosmo']	= '/home/user/hi_class'

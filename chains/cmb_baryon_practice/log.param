@@ -1,0 +1,18 @@
+#-----CLASS v2.7.2 (branch: hi_class, hash: 16ae0f6ccfcee513146ec36b690678f34fb687f4)-----
+
+data.experiments=['cmb_baryon_practice']
+data.parameters['omega_b'] = [2, 0, None, 0.02, 1e-2, 'cosmo']
+data.N=10
+data.write_step=5
+
+
+#-----Likelihood-cmb_baryon_practice-----
+cmb_baryon_practice.omega_b = 0.02222
+cmb_baryon_practice.sigma = 0.00023
+
+
+#--------Default-Configuration------
+data.path['root']	= '/home/user/montepython'
+data.path['MontePython']	= '/home/user/montepython/montepython'
+data.path['data']	= '/home/user/montepython/data'
+data.path['cosmo']	= '/home/user/hi_class'
